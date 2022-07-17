@@ -1,3 +1,9 @@
+<?php
+ /*
+ Template Name: contect
+ */
+ ?>
+
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
     <head>
@@ -78,6 +84,6 @@
             </div><!-- /.wrapper -->
         </section><!-- /#sns -->
 
-        <?php get_footer() ?> <!-- Wordpress footer -->
+        <?php get_footer(); ?> <!-- Wordpress footer -->
     </body>
 </html>

@@ -18,11 +18,11 @@
             <?php get_header(); ?> <!-- Wordpress header -->
 
             <div class="home-content wrapper">
-                <h2 class="page-title">We'll Make Your Day</h2>
-                <p>想不想待在時尚咖啡店裡放鬆身心？用無人工添加物的食材讓身體由內而外煥然一新。</p>
+                <h2 class="page-title"><?php the_title(); ?></h2>
+                <?php the_content(); ?>
                 <a class="button" href="menu.html">菜單介紹</a>
             </div><!-- /.home-content -->
         </div><!-- /#home -->
-        <?php get_footer() ?> <!-- Wordpress footer -->
+        <?php get_footer(); ?> <!-- Wordpress footer -->
     </body>
 </html>

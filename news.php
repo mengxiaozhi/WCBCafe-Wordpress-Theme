@@ -1,3 +1,9 @@
+<?php
+ /*
+ Template Name: news
+ */
+ ?>
+
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
     <head>
@@ -64,6 +70,6 @@
             </aside>
         </div><!-- /.news-contents -->
 
-        <?php get_footer() ?> <!-- Wordpress footer -->
+        <?php get_footer(); ?> <!-- Wordpress footer -->
     </body>
 </html>
