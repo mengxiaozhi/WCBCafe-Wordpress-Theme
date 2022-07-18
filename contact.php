@@ -7,7 +7,7 @@
             <?php get_header(); ?> <!-- Wordpress header -->
 
             <div class="wrapper">
-                <h2 class="page-title">Contact</h2>
+                <h2 class="page-title"><?php the_title(); ?></h2>
                 <form action="#">
                     <div>
                         <label for="name">姓名</label>
@@ -68,5 +68,3 @@
         </section><!-- /#sns -->
 
         <?php get_footer(); ?> <!-- Wordpress footer -->
-    </body>
-</html>

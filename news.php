@@ -7,7 +7,7 @@
             <?php get_header(); ?> <!-- Wordpress header -->
 
             <div class="wrapper">
-                <h2 class="page-title">News</h2>
+                <h2 class="page-title"><?php the_title(); ?></h2>
             </div><!-- /.wrapper -->
         </div><!-- /#news -->
 
@@ -54,5 +54,3 @@
         </div><!-- /.news-contents -->
 
         <?php get_footer(); ?> <!-- Wordpress footer -->
-    </body>
-</html>

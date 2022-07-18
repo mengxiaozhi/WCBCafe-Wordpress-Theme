@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet">
+        <?php wp_head(); ?>
     </head>
 
     <body>
@@ -19,9 +20,11 @@
                 <h1><a href="<?php echo home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="WCB CAFE 首頁"></a></h1>
                 <nav>
                     <ul class="main-nav">
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <?php wp_nav_menu( array(
+                            'container' => false,
+                            'items_wrap' => '%3$s'
+                        )); 
+                        ?>
                     </ul>
                 </nav>
             </header>
