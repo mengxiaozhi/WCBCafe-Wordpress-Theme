@@ -126,6 +126,9 @@ iframe {
 article {
     width: 74%;
 }
+article a{
+    color: #432;
+}
 .post-info {
     position: relative;
     padding-top: 4px;

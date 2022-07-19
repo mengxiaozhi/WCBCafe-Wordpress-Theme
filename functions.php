@@ -10,4 +10,15 @@
 
       add_theme_support( 'custom-logo' );
       //自定義網站LOGO
+
+      if (function_exists('register_sidebar')) {
+
+        register_sidebar(array(
+          'name' => '文章小工具区域',
+          'id'   => 'widgetized-area',
+          'description'   => '这里是小工具描述.'
+        ));
+      
+      }
+      //自定義小工具
 ?>
