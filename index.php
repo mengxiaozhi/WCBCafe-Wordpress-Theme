@@ -2,7 +2,6 @@
 
             <div class="home-content wrapper">
                 <h2 class="page-title"><?php echo get_bloginfo( 'name' ); ?></h2>
-                <?php the_content(); ?>
                 <a class="button" href="/menu/">菜單介紹</a>
             </div><!-- /.home-content -->
         </div><!-- /#home -->
@@ -18,7 +17,7 @@
                         ?>
                             <header class="post-info">
                                 <h2 class="post-title"><?php the_title(); ?></a></h2>
-                                <p class="post-date"><?php the_time('F'); ?>/<?php the_time('j'); ?> <span><?php the_time('Y'); ?></span></p>
+                                <p class="post-date"><?php the_time('m'); ?>/<?php the_time('d'); ?> <span><?php the_time('Y'); ?></span></p>
                                 <p class="post-cat">類別：<?php get_post_type()?></p>
                             </header>
                             <img src="<?php the_post_thumbnail_url(); ?>" alt="">

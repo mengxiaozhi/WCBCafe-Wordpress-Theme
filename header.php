@@ -3,7 +3,6 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
-        <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
@@ -16,7 +15,19 @@
     <body>
         <div id="home" class="big-bg">
             <header class="page-header wrapper">
-                <h1><a href="<?php echo home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="WCB CAFE 首頁"></a></h1>
+                <h1>
+                    <a href="<?php echo home_url(); ?>">
+                    <div class="logo">
+                    <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+                                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                                if ( has_custom_logo() ) {
+                                    echo '<img src="'. esc_url( $logo[0] ) .'">';
+                        } else {
+                                echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>';
+                        } ?>
+                    </div>
+                    </a>
+                </h1>
                 <nav>
                     <ul class="main-nav">
                         <?php wp_nav_menu(array('container' => false,'items_wrap' => '%3$s','theme_location' => 'custom-menu')); ?>

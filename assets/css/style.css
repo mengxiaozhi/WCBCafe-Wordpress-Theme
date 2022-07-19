@@ -92,6 +92,7 @@ iframe {
 #home {
     background-image: url(../images/main-bg.jpg);
     min-height: 100vh;
+    margin-bottom: 50px;
 }
 #home .page-title {
     text-transform: none;

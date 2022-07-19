@@ -7,4 +7,7 @@
       }
       add_action( 'init', 'wpb_custom_new_menu' );
       //自定菜單
+
+      add_theme_support( 'custom-logo' );
+      //自定義網站LOGO
 ?>
