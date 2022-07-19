@@ -19,11 +19,7 @@
                 <h1><a href="<?php echo home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="WCB CAFE 首頁"></a></h1>
                 <nav>
                     <ul class="main-nav">
-                        <?php wp_nav_menu( array(
-                            'container' => false,
-                            'items_wrap' => '%3$s'
-                        )); 
-                        ?>
+                        <?php wp_nav_menu(array('container' => false,'items_wrap' => '%3$s','theme_location' => 'custom-menu')); ?>
                     </ul>
                 </nav>
             </header>

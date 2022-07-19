@@ -303,6 +303,7 @@ footer p {
 }
 footer a{
     color: #fff;
+    text-decoration: underline;
 }
 
 /* 手機版
